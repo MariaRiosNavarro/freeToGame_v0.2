@@ -1,18 +1,10 @@
-# Free2Game
+# Free2Game_v0.2
 
-Final project Fullstack Developer Supercode - (Frontend part)
+My interpretation and further development of the project [free2game](https://github.com/MariaRiosNavarro/free2Game)
 
-42 Pull Request
+<!-- # [Vercel Deployment]()
 
-154 commits
-
-Team: Isabella, Andre, Yan, Maria
-
-# [Vercel Deployment](https://free2-game.vercel.app/)
-
-# [Netlify Deployment](https://magnificent-begonia-e16361.netlify.app/)
-
-# [FigJam](https://www.figma.com/file/Ral3d2PoGd6DHfJ7HKB4rG/Untitled?type=whiteboard&node-id=0-1&t=OskslBGUuywUJFNL-0)
+# [Netlify Deployment]() -->
 
 # Tech Stack
 
@@ -29,10 +21,6 @@ Team: Isabella, Andre, Yan, Maria
 - npm
 
 - react-search-autocomplete
-
-- FigJam
-
-- Discord
 
 # How to set it up
 
