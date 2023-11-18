@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const TopPC = () => {
   const [topPCGames, setToptPCGames] = useState([]);
-
+  const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
   const url =
     "https://free-to-play-games-database.p.rapidapi.com/api/games?platform=pc&sort-by=relevance";
 

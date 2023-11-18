@@ -7,7 +7,7 @@ import Button from "../components/Button/Button";
 const DetailPage = () => {
   const { id } = useParams();
   const [game, setGame] = useState("");
-
+  const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
   useEffect(() => {
     const url = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
     const options = {

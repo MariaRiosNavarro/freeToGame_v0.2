@@ -3,7 +3,7 @@ import "./SchrollTo.css";
 
 const ScrollTo = ({ top }) => {
   const [scroll, setScroll] = useState(false);
-
+  const api_key = process.env.VITE_REACT_APP_API_KEY;
   const handleScroll = () => {
     if (scroll) {
       if (top) {

@@ -8,6 +8,8 @@ import Header from "./components/Header/Header";
 import { useState, useEffect } from "react";
 // import { api_key } from "../config";
 
+const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
+
 function App() {
   const [newGames, setNewGames] = useState([]);
 

@@ -10,7 +10,7 @@ const Category = ({ setGames }) => {
   const [selectedPlatform, setSelectedPlatform] = useState("PLATFORM");
   const [selectedGenre, setSelectedGenre] = useState("GENRE/TAG");
   const [sortBy, setSortBy] = useState("SORT BY");
-
+  const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
   // const [isWindowOpen, setIsWindowOpen] = useState(false);
 
   // Zustand, um die ausgewählten Optionen zu speichern

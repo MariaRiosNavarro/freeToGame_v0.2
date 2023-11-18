@@ -7,7 +7,7 @@ const HomeSlider = ({ apiUrlEnd, description }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleGames, setVisibleGames] = useState([]);
   //   const [isHovered, setIsHovered] = useState(false);
-
+  const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
   const url = `https://free-to-play-games-database.p.rapidapi.com/api/games?${apiUrlEnd}`;
 
   const options = {
