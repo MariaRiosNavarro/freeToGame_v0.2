@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Category.css";
 import Arrow from "../../assets/img/Arrow.svg";
+import { gameGenres } from "../../utils/db";
 // import { api_key } from "../../../config";
 
 const Category = ({ setGames }) => {
@@ -10,7 +11,9 @@ const Category = ({ setGames }) => {
   const [selectedPlatform, setSelectedPlatform] = useState("PLATFORM");
   const [selectedGenre, setSelectedGenre] = useState("GENRE/TAG");
   const [sortBy, setSortBy] = useState("SORT BY");
+
   const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
+
   // const [isWindowOpen, setIsWindowOpen] = useState(false);
 
   // Zustand, um die ausgewählten Optionen zu speichern
@@ -19,54 +22,6 @@ const Category = ({ setGames }) => {
     genre: [],
     sortBy: [],
   });
-
-  const gameGenres = [
-    "mmorpg",
-    "shooter",
-    "strategy",
-    "moba",
-    "racing",
-    "sports",
-    "social",
-    "sandbox",
-    "open-world",
-    "survival",
-    "pvp",
-    "pve",
-    "pixel",
-    "voxel",
-    "zombie",
-    "turn-based",
-    "first-person",
-    "third-Person",
-    "top-down",
-    "tank",
-    "space",
-    "sailing",
-    "side-scroller",
-    "superhero",
-    "permadeath",
-    "card",
-    "battle-royale",
-    "mmo",
-    "mmofps",
-    "mmotps",
-    "3d",
-    "2d",
-    "anime",
-    "fantasy",
-    "sci-fi",
-    "fighting",
-    "action-rpg",
-    "action",
-    "military",
-    "martial-arts",
-    "flight",
-    "low-spec",
-    "tower-defense",
-    "horror",
-    "mmorts",
-  ];
 
   const options = {
     method: "GET",
