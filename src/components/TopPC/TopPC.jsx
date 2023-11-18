@@ -1,7 +1,7 @@
 import "./TopPC.css";
 import Card from "../Card/Card";
 import { useState, useEffect } from "react";
-import { api_key } from "../../../config";
+// import { api_key } from "../../../config";
 
 const TopPC = () => {
   const [topPCGames, setToptPCGames] = useState([]);

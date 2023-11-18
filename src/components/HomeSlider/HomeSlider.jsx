@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import "./HomeSlider.css";
-import { api_key } from "../../../config";
+// import { api_key } from "../../../config";
 
 const HomeSlider = ({ apiUrlEnd, description }) => {
   const [startIndex, setStartIndex] = useState(0);

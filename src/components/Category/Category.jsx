@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Category.css";
 import Arrow from "../../assets/img/Arrow.svg";
-import { api_key } from "../../../config";
+// import { api_key } from "../../../config";
 
 const Category = ({ setGames }) => {
   const [isOpenPlatform, setIsOpenPlatform] = useState(false);

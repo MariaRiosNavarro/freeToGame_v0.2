@@ -6,7 +6,7 @@ import RecentlyPage from "./pages/RecentlyPage";
 import DetailPage from "./pages/DetailPage";
 import Header from "./components/Header/Header";
 import { useState, useEffect } from "react";
-import { api_key } from "../config";
+// import { api_key } from "../config";
 
 function App() {
   const [newGames, setNewGames] = useState([]);
