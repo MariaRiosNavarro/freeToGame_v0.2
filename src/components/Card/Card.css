@@ -1,0 +1,123 @@
+.card {
+  border-radius: 20px;
+  background: #102130;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card.img {
+  transition: transform 0.7s ease-in-out;
+}
+/* .card:hover img {
+  transform: scale(1.07);} /* Ändere den Wert, um die Vergrößerung anzupassen */
+
+.card:hover {
+  transform: scale(1.06); /* Vergrößerung bei Hover */
+  box-shadow: 0 0 80px rgb(0, 0, 0); /* Schatten bei Hover */
+}
+
+.img-wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.img-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.text-wrapper {
+  padding: 0 2vw;
+  width: 17vw;
+}
+
+.text-wrapper h4 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  height: 5vh;
+}
+
+.text-wrapper button {
+  margin-bottom: 4vh;
+}
+
+.separation-line {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 110%;
+  height: 2px;
+  margin-left: -12px;
+  margin-bottom: 2vh;
+}
+.badge-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.badge-img-wrapper {
+  height: 36px;
+  width: 40px;
+  overflow: hidden;
+  border: 1px solid #ff4654;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .badge-img-wrapper svg {
+  fill: white;
+} */
+
+.description {
+  height: 100px;
+  overflow: hidden;
+  white-space: normal; /* Erlaube Umbruch von Text auf neue Zeilen */
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+
+  margin-bottom: 3vh;
+}
+
+/* .badge-img-wrapper img {
+  width: auto;
+} */
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card .img-wrapper {
+    height: 40%;
+  }
+
+  .card .text-wrapper {
+    height: 60%;
+  }
+
+  .text-wrapper {
+    padding: 0 4vw;
+    width: 90vw;
+  }
+  .description {
+    height: 50px;
+    width: 80%;
+  }
+
+  .separation-line {
+    width: 100%;
+    min-width: 80vw;
+    margin: 0 auto 2vh auto;
+  }
+}

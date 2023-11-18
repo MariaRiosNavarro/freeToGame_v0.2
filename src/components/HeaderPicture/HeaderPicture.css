@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+  .big-image {
+    filter: grayscale(0.3);
+    opacity: 0.7;
+    max-width: 90vw;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    width: 60%;
+    padding: 1rem;
+    -webkit-text-stroke: 1px black;
+  }
+}

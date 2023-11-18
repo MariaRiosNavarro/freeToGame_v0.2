@@ -1,0 +1,213 @@
+/* !Positionierung der 4 Karten */
+
+.top-pc-wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30vw 40vw;
+  grid-template-rows: 29vh 29vh 29vh;
+  grid-template-areas:
+    "game1 game2"
+    "game1 game3"
+    "game1 game4";
+  gap: 0vh 2vw;
+  max-width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.card-wrapper {
+  width: 100%;
+}
+.card-wrapper .separation-line {
+  display: none;
+}
+
+.card-wrapper .card .badge {
+  background-color: #040f14;
+}
+
+.card-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ff4654;
+  background-color: #040f14;
+  width: 58px;
+  height: 58px;
+  color: white;
+  font-size: 24px;
+  z-index: 5;
+  font-family: oswald;
+}
+
+/* !Erste Karte */
+
+.card-wrapper-1 {
+  grid-area: game1;
+  position: relative;
+}
+
+.card-wrapper-1 .card {
+  position: relative;
+}
+
+.card-wrapper-1 .card img {
+  height: 83.5vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.card-wrapper-1 .card .text-wrapper {
+  position: absolute;
+  left: 36px;
+  margin: 0;
+  padding: 0;
+  bottom: 30px;
+}
+
+.card-wrapper-1 .card .text-wrapper h4 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  height: 10vh;
+}
+
+.platform-img {
+  fill: white;
+}
+
+.card-wrapper-1 .card-number {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+/* !Nächste 3 Karten */
+
+.card-wrapper-2 {
+  grid-area: game2;
+  position: relative;
+}
+.card-wrapper-3 {
+  grid-area: game3;
+  position: relative;
+}
+.card-wrapper-4 {
+  grid-area: game4;
+  position: relative;
+}
+
+.card-wrapper-2 .card,
+.card-wrapper-3 .card,
+.card-wrapper-4 .card {
+  flex-direction: row;
+}
+.card-wrapper-2 .card .img-wrapper,
+.card-wrapper-3 .card .img-wrapper,
+.card-wrapper-4 .card .img-wrapper {
+  flex: 0 0 55%;
+  position: relative;
+  overflow: hidden;
+  height: 25vh;
+  width: auto;
+}
+
+.card-wrapper-2 .card .img-wrapper img,
+.card-wrapper-3 .card .img-wrapper img,
+.card-wrapper-4 .card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  /* height: auto;
+  width: auto; */
+  object-fit: cover;
+  display: block;
+}
+
+.card-wrapper-2 .card-number,
+.card-wrapper-3 .card-number,
+.card-wrapper-4 .card-number {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-pc-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+  }
+
+  .card-wrapper {
+    width: 100%;
+  }
+
+  .card-wrapper .text-wrapper {
+    width: auto;
+    position: static;
+    padding-left: 24px;
+  }
+
+  .card-wrapper .separation-line {
+    display: block;
+  }
+  .card-wrapper-1 .card img {
+    height: 100%;
+    width: 100%;
+  }
+  .card-wrapper-1 .card .text-wrapper {
+    position: static;
+  }
+
+  .card-wrapper-1 .card .text-wrapper h4 {
+    font-size: 18px;
+  }
+  .card-wrapper-2 .card,
+  .card-wrapper-3 .card,
+  .card-wrapper-4 .card {
+    flex-direction: column;
+  }
+  .card-wrapper-2 .card .img-wrapper,
+  .card-wrapper-3 .card .img-wrapper,
+  .card-wrapper-4 .card .img-wrapper {
+    flex: 0 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+  }
+  .card-wrapper-1 .card-number {
+    left: 24px;
+    top: 24px;
+  }
+
+  .card-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #ff4654;
+    background-color: #040f14;
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    z-index: 5;
+    font-family: oswald;
+  }
+  /* - */
+}
+
+/* 
+.card {
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+}
+
+.card .img-wrapper {
+  height: 40%;
+} */
