@@ -41,7 +41,7 @@ input[name="hidden-scroll"] + label:before {
   /* font-size: 1.5rem;
   width: 3rem;
   height: 3rem; */
-  color: #040f14;
+  color: transparent;
   /* border-radius: 50%; */
   text-align: center;
   cursor: pointer;
