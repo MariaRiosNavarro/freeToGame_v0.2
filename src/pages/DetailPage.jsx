@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./DetailPage.css";
 import Button from "../components/Button/Button";
+import { api_key } from "../../config";
 
 const DetailPage = () => {
   const { id } = useParams();
@@ -12,7 +13,7 @@ const DetailPage = () => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "2da045f70dmsh00a6d7151352363p157277jsn3936fc9a63e5",
+        "X-RapidAPI-Key": api_key,
         "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
       },
       mode: "cors",

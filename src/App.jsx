@@ -6,6 +6,7 @@ import RecentlyPage from "./pages/RecentlyPage";
 import DetailPage from "./pages/DetailPage";
 import Header from "./components/Header/Header";
 import { useState, useEffect } from "react";
+import { api_key } from "../config";
 
 function App() {
   const [newGames, setNewGames] = useState([]);
@@ -16,7 +17,7 @@ function App() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "80bad1a5dbmshf2f932854360a23p117e26jsn6a9999a6e64f",
+      "X-RapidAPI-Key": api_key,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
     mode: "cors",

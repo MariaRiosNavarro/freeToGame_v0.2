@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Category.css";
 import Arrow from "../../assets/img/Arrow.svg";
+import { api_key } from "../../../config";
 
 const Category = ({ setGames }) => {
   const [isOpenPlatform, setIsOpenPlatform] = useState(false);
@@ -70,7 +71,7 @@ const Category = ({ setGames }) => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "80bad1a5dbmshf2f932854360a23p117e26jsn6a9999a6e64f",
+      "X-RapidAPI-Key": api_key,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
     mode: "cors",

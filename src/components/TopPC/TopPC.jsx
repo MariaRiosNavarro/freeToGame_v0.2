@@ -1,6 +1,7 @@
 import "./TopPC.css";
 import Card from "../Card/Card";
 import { useState, useEffect } from "react";
+import { api_key } from "../../../config";
 
 const TopPC = () => {
   const [topPCGames, setToptPCGames] = useState([]);
@@ -11,7 +12,7 @@ const TopPC = () => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "80caff7fbemshc112244508e4c65p1241abjsnd55fb8f398b4",
+      "X-RapidAPI-Key": api_key,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
     mode: "cors",
