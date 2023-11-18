@@ -1,6 +1,6 @@
 # Free2Game_v0.2
 
-My interpretation and further development of the project [free2game](https://github.com/MariaRiosNavarro/free2Game)
+My Version of further development of the project [free2game](https://github.com/MariaRiosNavarro/free2Game)
 
 # [Vercel Deployment](https://free-to-game-v0-2.vercel.app/)
 
@@ -29,6 +29,16 @@ My interpretation and further development of the project [free2game](https://git
 - Fork or Clone this repository in your local repository
 
 - Install all dependencies: npm install
+
+- create a accounts in https://rapidapi.com/digiwalls/api/free-to-play-games-database/
+
+- create .env.local file in the root directory and insert your enviroment variables in it
+
+VITE_REACT_APP_API_KEY=yourkey
+
+- Run app in dev mode: npm run dev
+
+Have fun at: http://localhost:5173/
 
 # Desktop
 
