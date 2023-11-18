@@ -64,4 +64,11 @@
   .slider-content .card {
     width: 100%;
   }
+
+  .slider-button {
+    display: none;
+  }
+  .slider-wrapper:hover .slider-button {
+    display: none;
+  }
 }
