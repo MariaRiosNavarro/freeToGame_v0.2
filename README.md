@@ -22,6 +22,8 @@ My Version of further development of the project [free2game](https://github.com/
 
 - react-search-autocomplete
 
+<hr>
+
 # How to set it up
 
 - Create a local Repository in your computer
@@ -30,15 +32,21 @@ My Version of further development of the project [free2game](https://github.com/
 
 - Install all dependencies: npm install
 
-- create a accounts in https://rapidapi.com/digiwalls/api/free-to-play-games-database/
+- create a accounts in https://rapidapi.com/digiwalls/api/free-to-play-games-database/ and save your api key
 
 - create .env.local file in the root directory and insert your enviroment variables in it
 
+```
+
 VITE_REACT_APP_API_KEY=yourkey
+
+```
 
 - Run app in dev mode: npm run dev
 
-Have fun at: http://localhost:5173/
+- Have fun at: http://localhost:5173/
+
+<hr>
 
 # Desktop
 
