@@ -2,9 +2,9 @@
 
 My interpretation and further development of the project [free2game](https://github.com/MariaRiosNavarro/free2Game)
 
-<!-- # [Vercel Deployment]()
+# [Vercel Deployment](https://free-to-game-v0-2.vercel.app/)
 
-# [Netlify Deployment]() -->
+<!--# [Netlify Deployment]() -->
 
 # Tech Stack
 
