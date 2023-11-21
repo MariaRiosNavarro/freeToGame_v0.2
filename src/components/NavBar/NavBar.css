@@ -40,7 +40,7 @@ nav a {
 
 @media only screen and (max-width: 600px) {
   nav {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 5vw;
     height: 70px;
@@ -55,10 +55,12 @@ nav a {
   }
   .search {
     width: 220px;
-    padding-left: 7vw;
+    padding-left: 1rem;
   }
 
-  .toggle-light {
-    padding-right: 1rem;
+  .nav-wrapper {
+    gap: 10px;
+    width: 63vw;
+    justify-content: space-between;
   }
 }
