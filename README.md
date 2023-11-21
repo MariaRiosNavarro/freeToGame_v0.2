@@ -1,4 +1,4 @@
-# Free2Game_v0.2
+# Free2Game_v0.2 (React, Css with Dark/light Mode)
 
 My Version of further development of the project [free2game](https://github.com/MariaRiosNavarro/free2Game)
 
