@@ -32,4 +32,8 @@
   .gallery-wrapper h2 {
     margin-bottom: 4vh;
   }
+
+  .noresult-pikachu {
+    max-width: 70vw;
+  }
 }

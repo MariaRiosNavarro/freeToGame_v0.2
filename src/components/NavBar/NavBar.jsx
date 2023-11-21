@@ -2,9 +2,16 @@ import Logo from "../../assets/img/Logo.svg";
 import "./NavBar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
+import { useMyContext } from "../../../Context/AppThemeProvider";
+import LightModeIcon from "../../assets/img/lightmode.svg";
 
 const NavBar = (props) => {
+  const { setTheme } = useMyContext();
   const navigate = useNavigate();
+
+  const handleToggleLight = () => {
+    setTheme((value) => !value);
+  };
 
   const handleOnSearch = (string, results) => {
     // onSearch will have as the first callback parameter
@@ -42,25 +49,32 @@ const NavBar = (props) => {
       <Link to={"/"}>
         <img src={Logo} alt="" className="logo" />
       </Link>
-
-      <div className="search">
-        <ReactSearchAutocomplete
-          items={props.item}
-          fuseOptions={{ keys: ["title", "description"] }}
-          resultStringKeyName="title"
-          onSearch={handleOnSearch}
-          onHover={handleOnHover}
-          onSelect={handleOnSelect}
-          onFocus={handleOnFocus}
-          autoFocus
-          formatResult={formatResult}
-          styling={{
-            backgroundColor: "#375470",
-            color: "white",
-            iconColor: "white",
-            border: "none",
-            hoverBackgroundColor: "#152f47",
-          }}
+      <div className="nav-wrapper">
+        <div className="search">
+          <ReactSearchAutocomplete
+            items={props.item}
+            fuseOptions={{ keys: ["title", "description"] }}
+            resultStringKeyName="title"
+            onSearch={handleOnSearch}
+            onHover={handleOnHover}
+            onSelect={handleOnSelect}
+            onFocus={handleOnFocus}
+            autoFocus
+            formatResult={formatResult}
+            styling={{
+              backgroundColor: "#375470",
+              color: "white",
+              iconColor: "white",
+              border: "none",
+              hoverBackgroundColor: "#152f47",
+            }}
+          />
+        </div>
+        <img
+          className="toggle-light"
+          onClick={handleToggleLight}
+          src={LightModeIcon}
+          alt=""
         />
       </div>
     </nav>

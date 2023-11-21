@@ -13,7 +13,7 @@ const Gallery = ({ newGames }) => {
           <div>
             <div>
               <h2>No results...</h2>
-              <img src={Pikachu} alt="" />
+              <img className="noresult-pikachu" src={Pikachu} alt="" />
             </div>
           </div>
         )}
