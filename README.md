@@ -2,7 +2,7 @@
 
 My Version of further development of team project of [free2game](https://github.com/MariaRiosNavarro/free2Game)
 
-I made stylistic changes, hid the key as recommended by best practice and added a clear mode, as the standard is dark.
+I made stylistic changes, hid the key as recommended by best practice and added a light mode, as the standard is dark.
 
 # [Vercel Deployment](https://free-to-game-v0-2.vercel.app/)
 
