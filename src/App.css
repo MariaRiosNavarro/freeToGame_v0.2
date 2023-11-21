@@ -26,6 +26,14 @@ h1 {
   color: white;
 }
 
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light p {
+  color: #040f14;
+}
+
 h2,
 h3 {
   color: #fff;
@@ -113,6 +121,11 @@ img {
   padding-top: 9vh;
   background-color: #040f14;
   color: white;
+}
+
+.light .page-style {
+  background-color: rgb(164, 225, 249);
+  color: #040f14;
 }
 
 @media only screen and (max-width: 600px) {

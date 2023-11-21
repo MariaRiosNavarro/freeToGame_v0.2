@@ -13,6 +13,11 @@ nav {
   margin-left: 85px;
 }
 
+.light nav {
+  background: none;
+  background-color: rgb(23, 23, 35);
+}
+
 nav a {
   text-decoration: none;
 }

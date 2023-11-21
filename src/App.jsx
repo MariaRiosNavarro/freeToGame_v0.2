@@ -7,11 +7,13 @@ import DetailPage from "./pages/DetailPage";
 import Header from "./components/Header/Header";
 import { useState, useEffect } from "react";
 // import { api_key } from "../config";
+import { useMyContext } from "../Context/AppThemeProvider";
 
 const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
 
 function App() {
   const [newGames, setNewGames] = useState([]);
+  const { theme } = useMyContext();
 
   const url = `https://free-to-play-games-database.p.rapidapi.com/api/games`;
   // const urlRecently = `https://free-to-play-games-database.p.rapidapi.com/api/games?sort-by=release-date`;
@@ -33,21 +35,23 @@ function App() {
   }, []);
   return (
     <>
-      <BrowserRouter>
-        <Header newGames={newGames} />
-        <Routes>
-          <Route path="/" element={<HomePage newGames={newGames} />}></Route>
-          <Route
-            path="/allgames"
-            element={<AllGamesPage newGames={newGames} />}
-          ></Route>
-          <Route
-            path="/recently"
-            element={<RecentlyPage newGames={newGames} />}
-          ></Route>
-          <Route path="/detail/:id" element={<DetailPage />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <div className={theme ? "light" : null}>
+        <BrowserRouter>
+          <Header newGames={newGames} />
+          <Routes>
+            <Route path="/" element={<HomePage newGames={newGames} />}></Route>
+            <Route
+              path="/allgames"
+              element={<AllGamesPage newGames={newGames} />}
+            ></Route>
+            <Route
+              path="/recently"
+              element={<RecentlyPage newGames={newGames} />}
+            ></Route>
+            <Route path="/detail/:id" element={<DetailPage />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }
