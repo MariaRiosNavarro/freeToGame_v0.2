@@ -63,3 +63,11 @@ VITE_REACT_APP_API_KEY=yourkey
 <img src="./public/img/readme5.png" alt="readme">
 <img src="./public/img/readme6.png" alt="readme">
 </div>
+
+# Light Mode
+
+<div>
+<img src="./public/img/readmelight1.png" alt="readme">
+<img src="./public/img/readmelight2.png" alt="readme">
+
+</div>
