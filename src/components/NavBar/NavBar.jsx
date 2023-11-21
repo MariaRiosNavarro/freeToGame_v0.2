@@ -49,28 +49,34 @@ const NavBar = (props) => {
       <Link to={"/"}>
         <img src={Logo} alt="" className="logo" />
       </Link>
-
-      <div className="search">
-        <ReactSearchAutocomplete
-          items={props.item}
-          fuseOptions={{ keys: ["title", "description"] }}
-          resultStringKeyName="title"
-          onSearch={handleOnSearch}
-          onHover={handleOnHover}
-          onSelect={handleOnSelect}
-          onFocus={handleOnFocus}
-          autoFocus
-          formatResult={formatResult}
-          styling={{
-            backgroundColor: "#375470",
-            color: "white",
-            iconColor: "white",
-            border: "none",
-            hoverBackgroundColor: "#152f47",
-          }}
+      <div className="nav-wrapper">
+        <div className="search">
+          <ReactSearchAutocomplete
+            items={props.item}
+            fuseOptions={{ keys: ["title", "description"] }}
+            resultStringKeyName="title"
+            onSearch={handleOnSearch}
+            onHover={handleOnHover}
+            onSelect={handleOnSelect}
+            onFocus={handleOnFocus}
+            autoFocus
+            formatResult={formatResult}
+            styling={{
+              backgroundColor: "#375470",
+              color: "white",
+              iconColor: "white",
+              border: "none",
+              hoverBackgroundColor: "#152f47",
+            }}
+          />
+        </div>
+        <img
+          className="toggle-light"
+          onClick={handleToggleLight}
+          src={LightModeIcon}
+          alt=""
         />
       </div>
-      <img onClick={handleToggleLight} src={LightModeIcon} alt="" />
     </nav>
   );
 };

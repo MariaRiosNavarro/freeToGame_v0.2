@@ -15,11 +15,17 @@ nav {
 
 .light nav {
   background: none;
-  background-color: rgb(23, 23, 35);
+  background-color: #040f14;
 }
 
 nav a {
   text-decoration: none;
+}
+
+.nav-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
 .search {
@@ -34,10 +40,11 @@ nav a {
 
 @media only screen and (max-width: 600px) {
   nav {
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 5vw;
-    width: 80vw;
+    height: 70px;
+    width: 100vw;
     padding: 10px 0;
     margin-left: 55px;
   }
@@ -49,5 +56,9 @@ nav a {
   .search {
     width: 220px;
     padding-left: 7vw;
+  }
+
+  .toggle-light {
+    padding-right: 1rem;
   }
 }

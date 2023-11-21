@@ -137,8 +137,8 @@ aside .asideIcon p {
 
 @media only screen and (max-width: 600px) {
   aside {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     overflow: hidden;
     border-right: none;
     background-color: transparent;
@@ -150,9 +150,17 @@ aside .asideIcon p {
   }
 
   .light aside {
+    background: linear-gradient(to bottom, transparent, transparent);
+    background-color: #040f14;
+  }
+
+  aside .menu-icon {
+    background-color: #040f14;
+  }
+  /* .light aside {
     background: linear-gradient(to bottom, lightblue, lightblue);
     color: black;
-  }
+  } */
 
   aside img {
     height: 50px;
