@@ -1,6 +1,8 @@
-# Free2Game_v0.2 (React, Css with Dark/light Mode)
+# My Free2Game_v0.2 Version (React, Css with Dark/light Mode)
 
-My Version of further development of the project [free2game](https://github.com/MariaRiosNavarro/free2Game)
+My Version of further development of team project of [free2game](https://github.com/MariaRiosNavarro/free2Game)
+
+I made stylistic changes, hid the key as recommended by best practice and added a clear mode, as the standard is dark.
 
 # [Vercel Deployment](https://free-to-game-v0-2.vercel.app/)
 
